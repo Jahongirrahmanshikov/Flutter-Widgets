@@ -10,28 +10,66 @@ void main() {
           margin: const EdgeInsets.all(14),
           width: 999,
           decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 85, 142, 207),
             border: Border.all(
-              color: const Color.fromARGB(255, 4, 47, 111),
+              color: Colors.blue,
               width: 10,
             ),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              for (int i = 0; i < 3; i++)
-                Container(
-                  margin: const EdgeInsets.all(10),
-                  width: 999,
-                  height: 50, 
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-                    border: Border.all(
-                      color: Colors.black,
-                      width: 7,
-                    ),
+              Container(
+                margin: const EdgeInsets.all(15),
+                width: 999,
+                height: 220,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 7,
                   ),
                 ),
+              ),
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 999,
+                height: 570,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.purple,
+                    width: 7,
+                  ),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.fromLTRB(10, 40, 10,10),
+                      width: 140,
+                      height: 999,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.red,
+                          width: 7,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(10),
+                      width: 145,
+                      height: 999,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black,
+                          width: 7,
+                        ),
+                      
+                      ),
+                    
+                    ),
+                    
+                  ],
+                ),
+              ),
             ],
           ),
         ),
