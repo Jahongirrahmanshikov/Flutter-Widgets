@@ -4,74 +4,105 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Box",
       home: Scaffold(
-        body: Container(
-          margin: const EdgeInsets.all(14),
-          width: 999,
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.blue,
-              width: 10,
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  width: 350,
+                  height: 300,
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade300,
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(20),
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  width: 80,
+                  height: 300,
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.all(10),
+                        width: 80,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          color: Colors.blue.shade300,
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(20),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(10),
+                        width: 80,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.blue.shade300,
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                margin: const EdgeInsets.all(15),
-                width: 999,
-                height: 220,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 7,
-                  ),
-                ),
-              ),
-              Container(
-                margin: const EdgeInsets.all(10),
-                width: 999,
-                height: 570,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.purple,
-                    width: 7,
-                  ),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.fromLTRB(10, 40, 10,10),
-                      width: 140,
-                      height: 999,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.red,
-                          width: 7,
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  width: 80,
+                  height: 300,
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.all(10),
+                        width: 80,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          color: Colors.blue.shade300,
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(20),
+                          ),
                         ),
                       ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.all(10),
-                      width: 145,
-                      height: 999,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 7,
+                      Container(
+                        margin: const EdgeInsets.all(10),
+                        width: 80,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.blue.shade300,
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(20),
+                          ),
                         ),
-                      
                       ),
-                    
-                    ),
-                    
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  width: 350,
+                  height: 300,
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade300,
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(20),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     ),
