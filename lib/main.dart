@@ -23,7 +23,7 @@ void main() {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 60,left: 10),
+                margin: const EdgeInsets.only(left: 60, top: 10),
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
@@ -37,7 +37,7 @@ void main() {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 120, left: 10),
+                margin: const EdgeInsets.only(left: 120, top: 10),
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
@@ -51,7 +51,7 @@ void main() {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(left: 10, top: 180),
+                margin: const EdgeInsets.only(left: 180, top: 10),
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
