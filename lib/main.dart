@@ -5,41 +5,52 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 197, 197, 197),
-        body: Column(
-          children: [
-            for (int i = 0; i < 5; i++)
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Stack(
+                alignment: Alignment.center,
                 children: [
                   Container(
-                    margin: const EdgeInsets.only(left: 30, top: 20),
-                    width: 50,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      color: const Color.fromARGB(255, 120, 148, 220),
-                    ),
-                    child: const Icon(
-                      Icons.person,
-                      size: 33,
-                      color: Color.fromARGB(255, 45, 16, 159),
+                    width: 100,
+                    height: 100,
+                    margin: const EdgeInsets.only(bottom: 100),
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://static.vecteezy.com/system/resources/previews/023/986/555/original/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png",
+                        ),
+                      ),
                     ),
                   ),
-                  const Text(
-                    "   Usernmae",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
+                  Container(
+                    margin: const EdgeInsets.only(
+                      top: 550,
+                    ),
+                    width: 100,
+                    height: 100,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://assets.stickpng.com/thumbs/61fae2ba95e6ca00047b4f11.png",
+                        ),
+                      ),
                     ),
                   ),
-                  const Text(
-                    "    email",
-                    style: TextStyle(fontSize: 20),
+                  Container(
+                    margin: const EdgeInsets.only(
+                      top: 500,
+                    ),
+                    child: const Text(
+                      "form",
+                      style: TextStyle(fontSize: 18),
+                    ),
                   ),
                 ],
               ),
-          ],
+            ],
+          ),
         ),
       ),
     ),
