@@ -6,7 +6,7 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: Column(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
