@@ -6,8 +6,7 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Stack(
             children: [
               Container(
                 margin: const EdgeInsets.all(10),
@@ -24,7 +23,7 @@ void main() {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(top: 60,left: 10),
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
@@ -38,7 +37,7 @@ void main() {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(top: 120, left: 10),
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
@@ -52,7 +51,7 @@ void main() {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(left: 10, top: 180),
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
