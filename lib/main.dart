@@ -5,128 +5,68 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          title: const Center(
+            child: Text("AppName"),
+          ),
+        ),
         body: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SizedBox(
-                width: 200,
-                height: 250,
-                child: Image.network(
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7xADuNmSkk1VTU_enYZEQMVYkIvLpawltfA&usqp=CAU",
-                  fit: BoxFit.cover,
-                ),
-              ),
-              const Text(
-                """ 
-     Visitors""",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25,
-                ),
-              ),
-              Stack(
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(left: 20, top: 12),
-                    width: 50,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      color: const Color.fromARGB(255, 252, 111, 101),
-                    ),
-                    child: const Icon(
-                      Icons.person,
-                      size: 44,
-                      color: Colors.red,
+              for (int i = 0; i < 5; i++)
+                Container(
+                  margin: const EdgeInsets.only(left: 20, top: 12, right: 20),
+                  height: 110,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black26,
+                      width: 1,
                     ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(left: 60, top: 12),
-                    width: 50,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      color: const Color.fromARGB(255, 232, 182, 56),
-                    ),
-                    child: const Icon(
-                      Icons.person,
-                      size: 44,
-                      color: Color.fromARGB(255, 223, 151, 8),
-                    ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      SizedBox(
+                        width: 120,
+                        child: Image.network(
+                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7xADuNmSkk1VTU_enYZEQMVYkIvLpawltfA&usqp=CAU",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(10),
+                              child: const Text(
+                                "Restaurant Name",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16, // Matn o'lchamini belgilash
+                                ),
+                              ),
+                            ),
+                            Container(
+                              margin: const EdgeInsets.all(10),
+                              child: const Text(
+                                "Address",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16, // Matn o'lchamini belgilash
+                                ),
+                              ),
+                            ),
+                            // Boshqa matnlar
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(left: 100, top: 12),
-                    width: 50,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      color: const Color.fromARGB(255, 158, 42, 212),
-                    ),
-                    child: const Icon(
-                      Icons.person,
-                      size: 44,
-                      color: Color.fromARGB(255, 102, 8, 180),
-                    ),
-                  ),
-                ],
-              ),
-              Container(
-                margin: const EdgeInsets.only(
-                  left: 40,
-                  right: 40,
-                  top: 60,
-                  bottom: 10,
                 ),
-                height: 100,
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Column(
-                      children: [
-                        Icon(
-                          Icons.call,
-                          size: 33,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "Call",
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Icon(
-                          Icons.telegram,
-                          size: 33,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "Route",
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Icon(
-                          Icons.share,
-                          size: 33,
-                          color: Colors.black,
-                        ),
-                        Text(
-                          "Share",
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+              // Boshqa elementlar
             ],
           ),
         ),
