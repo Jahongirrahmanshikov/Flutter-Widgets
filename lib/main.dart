@@ -5,183 +5,68 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
-          children: [
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.blue.shade300,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(10),
-                        ),
-                      ),
-                      width: 200,
-                      height: 200,
-                      margin: const EdgeInsets.all(10),
-                    ),
-                    Row(
-                      children: [
-                        for (int i = 0; i < 2; i++)
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.blue.shade300,
-                              borderRadius: const BorderRadius.all(
-                                Radius.circular(10),
-                              ),
-                            ),
-                            width: 90,
-                            height: 80,
-                            margin: const EdgeInsets.all(10),
-                          )
-                      ],
-                    ),
-                  ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 80,
+                height: 80,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40),
+                  color: const Color.fromARGB(255, 252, 111, 101),
                 ),
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blue.shade300,
-                            borderRadius: const BorderRadius.all(
-                              Radius.circular(10),
-                            ),
-                          ),
-                          width: 100,
-                          height: 100,
-                          margin: const EdgeInsets.all(10),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blue.shade300,
-                            borderRadius: const BorderRadius.all(
-                              Radius.circular(10),
-                            ),
-                          ),
-                          width: 100,
-                          height: 180,
-                          margin: const EdgeInsets.all(10),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        for (int i = 0; i < 3; i++)
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.blue.shade300,
-                              borderRadius: const BorderRadius.all(
-                                Radius.circular(10),
-                              ),
-                            ),
-                            width: 100,
-                            height: 87,
-                            margin: const EdgeInsets.all(10),
-                          ),
-                      ],
-                    ),
-                  ],
-                )
-              ],
-            ),
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blue.shade300,
-                            borderRadius: const BorderRadius.all(
-                              Radius.circular(10),
-                            ),
-                          ),
-                          width: 200,
-                          height: 90,
-                          margin: const EdgeInsets.all(10),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blue.shade300,
-                            borderRadius: const BorderRadius.all(
-                              Radius.circular(10),
-                            ),
-                          ),
-                          width: 100,
-                          height: 90,
-                          margin: const EdgeInsets.all(10),
-                        )
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            for (int i = 0; i < 2; i++)
-                              Container(
-                                margin: const EdgeInsets.all(10),
-                                decoration: BoxDecoration(
-                                  color: Colors.blue.shade300,
-                                  borderRadius: const BorderRadius.all(
-                                    Radius.circular(10),
-                                  ),
-                                ),
-                                width: 90,
-                                height: 90,
-                              )
-                          ],
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blue.shade300,
-                            borderRadius: const BorderRadius.all(
-                              Radius.circular(10),
-                            ),
-                          ),
-                          width: 210,
-                          height: 200,
-                          margin: const EdgeInsets.all(10),
-                        ),
-                      ],
-                    ),
-                  ],
+                child: const Icon(
+                  Icons.person,
+                  size: 55,
+                  color: Colors.red,
                 ),
-                Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.blue.shade300,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(10),
-                        ),
-                      ),
-                      width: 100,
-                      height: 200,
-                      margin: const EdgeInsets.all(10),
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.blue.shade300,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(10),
-                        ),
-                      ),
-                      width: 100,
-                      height: 90,
-                      margin: const EdgeInsets.all(10),
-                    ),
-                  ],
+              ),
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 80,
+                height: 80,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40),
+                  color: const Color.fromARGB(255, 54, 196, 166),
                 ),
-              ],
-            )
-          ],
+                child: const Icon(
+                  Icons.person,
+                  size: 55,
+                  color: Color.fromARGB(255, 19, 140, 126),
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 80,
+                height: 80,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40),
+                  color: const Color.fromARGB(255, 232, 182, 56),
+                ),
+                child: const Icon(
+                  Icons.person,
+                  size: 55,
+                  color: Color.fromARGB(255, 223, 151, 8),
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 80,
+                height: 80,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40),
+                  color: const Color.fromARGB(255, 158, 42, 212),
+                ),
+                child: const Icon(
+                  Icons.person,
+                  size: 55,
+                  color: Color.fromARGB(255, 102, 8, 180),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     ),
